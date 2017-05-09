@@ -1,4 +1,4 @@
-FROM elasticsearch:5.3.0-alpine
+FROM elasticsearch:5.4.0-alpine
 
 COPY elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
