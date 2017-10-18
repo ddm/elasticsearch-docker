@@ -9,3 +9,5 @@ transport.tcp.compress: true
 # Details: https://github.com/elastic/elasticsearch/pull/17288
 discovery.zen.minimum_master_nodes: 1
 
+bootstrap.system_call_filter: false
+

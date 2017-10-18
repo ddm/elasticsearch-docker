@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM arm32v6/openjdk:8-jre-alpine
 
 # TODO: https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ARG ELASTICSEARCH_VERSION="5.6.3"
@@ -28,4 +28,6 @@ EXPOSE 9300
 
 USER elasticsearch
 COPY elasticsearch.yml ${ELASTICSEARCH_DIR}/config/elasticsearch.yml
+ENV ES_JAVA_OPTS="-Xms512m -Xmx512m"
 CMD /usr/share/elasticsearch/bin/elasticsearch
+
