@@ -1,7 +1,7 @@
 FROM openjdk:8-jre-alpine
 
 # TODO: https://artifacts.elastic.co/GPG-KEY-elasticsearch
-ARG ELASTICSEARCH_VERSION="5.6.3"
+ARG ELASTICSEARCH_VERSION="7.3.1"
 ARG ELASTICSEARCH_DIR="/usr/share/elasticsearch"
 
 ADD https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz ${ELASTICSEARCH_DIR}/elasticsearch.tar.gz
